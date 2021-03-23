@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0px;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --azul-claro: #238AC4;
+    --azul-oscuro: #233354;
+
+    --oscuro-transparente: #000000b2;
+    --sombra-caja: 0px 10px 20px -5px var(--oscuro-transparente);
+}
+
+
+
+
+
+
+
+
+/*AQUÍ VAN LOS COLORES*/
+
+.fondoAzulOscuro{
+    background-color: var(--azul-oscuro) !important;
+}
+
+.fondoAzulClaro{
+    background-color: var(--azul-claro);
+}
+
+.fondoBlanco{
+    background-color: var(--color-primario);
+}
+
+.fondoOscuro{
+    background-color: var(--oscuro-transparente);
+    width: 100%;
+}
+
+
+.sombraContenedor{
+    box-shadow: var(--sombra-caja);
+}
+
+
+
+/*ESTILOS DE TEXTO*/
+
+
+.texto-alineado{
+    display:flex;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+.texto-menuPrincipal{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white !important;
+    margin-right: 1rem;
+}
+
+.texto-menu{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white !important;
+    margin-right: 2rem; 
+}
+
+.texto-menu:hover{
+    color: var(--azul-claro) !important;
+}
+
+.texto-menuGris{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--azul-claro) !important;
+}
+
+.texto-menuGris:hover{
+    color: var(--azul-claro) !important;
+}
+
+
+
+.texto-Titulo{
+    font-size: 250%;
+    font-weight: 500;
+}
+
+.texto-Subtitulo{
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.texto-regular{    
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.texto-descripcion{    
+    font-size: 100%;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+.texto-Izquierdo{
+    font-size: 220%;
+    font-weight: 400;
+    text-align: left;
+    width: 70%;
+}
+
+.texto-ColorBlanco{
+    color:white;
+}
+
+
+
+
+
+
+/*CONTENEDORES*/
+.margenSuperior{
+    height: 4rem; /* Add a top margin to avoid content overlay */
+}
+
+.contenedor-Presentacion{
+    height: auto;
+    background-image: url("../Resource/Foco.jpg");
+    background-size: cover;
+    background-color: var(--azul-oscuro);
+}
+
+
+.contenedor-Servicios{
+    height: auto;
+    background-color: var(--azul-claro);
+    
+    
+}
+
+.contenedor-ServiciosServicio{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    outline-style: auto ;
+    outline-color: white;
+    border-radius: 10px;
+    margin: 3rem 0.5rem;
+}
+
+.contenedor-ServiciosServicioImagen{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 30%;
+    height: auto;
+}
+
+.imagen-Servicios{
+    height: auto;
+    width: 100%;
+}
+
+.contenedor-ServiciosServiciotexto{
+    display: flex;
+    flex-direction: column;
+
+    width:70%;
+    padding: 1rem;
+}
+
+
+.contenedor-OverflowAuto{
+    height: 70vh;
+    overflow: auto;
+}
+.contenedor-OverflowAuto::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.contenedor-MisionValores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "mision valores";
+
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+
+    background: white;
+}
+
+.areaMision{
+    grid-area:mision;
+}
+
+.areaValores{
+    grid-area:valores;
+}
+
+.tarjetaBlanca{
+    height: auto;
+    width: 90%;
+    padding: 1rem;
+    margin: 5%;
+
+    outline: 2px black groove;
+    border-radius: 5px;
+}
+
+
+.contenedor-Carrusel{
+    height: auto;
+}
+
+.tamImagen{
+    width: 100px; 
+    height: 100vh;
+    background-size: contain;
+}
+
+
+
+
+.contenedor-Contacto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: auto;
+    padding: 5rem;
+
+    background-color: var(--azul-oscuro);
+}
+
+
+.margin-Vertical{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+
+.padding-10{
+    padding:10%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedorIcono{
+    display:flex;
+}
+
+.padding-menu{
+    padding-left: 2rem; 
+}
+
+.icono{
+    width:2rem;
+    height:2rem;
+}
+
+
+
+.carruselDescripcion{
+    right: 0 !important;
+    left: 0 !important;
+    padding: 0 6rem;
+}
+
+.h3 {
+    scroll-margin-top: 5rem; /* whatever is a nice number that gets you past the header */
+}
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height:auto;
+    padding:5rem 3rem;
+
+
+}
+
+
+
+.titulo{    
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: justify;
+    color:black;
+}
+
+.subtitutlo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+    color:black;
+
+}
+
+.presentacion{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: justify;
+    color:black;
+}
+
+.texto{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+    color:rgb(26, 26, 26);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1024px) {
+    /* For mobile phones: */
+    
+
+    .contenedor-MisionValores{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "mision" "valores";
+
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+
+        background: white;
+    }
+
+    
+    .tamImagen{
+        width: 100px; 
+        height: 70vh;
+        background-size: contain;
+    }
+    
+    .contenedor-Contacto{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+        height: auto;
+        padding: 5rem;
+    
+        background-color: var(--azul-oscuro);
+    }
+
+
+
+    
+    .texto-Titulo{
+        font-size: 200%;
+        font-weight: 500;
+    }
+
+    .texto-Subtitulo{
+        font-size: 130%;
+        font-weight: 500;
+    }
+
+    .texto-regular{    
+        font-size: 130%;
+        font-weight: 400;
+    }
+
+    .texto-descripcion{    
+        font-size: 100%;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    
+    .texto-Izquierdo{
+        font-size: 180%;
+        font-weight: 400;
+        text-align: justify;
+        width: 90%;
+    }
+
+}
+
+
+@media all and (max-width: 800px) {
+    /* For mobile phones: */
+    
+    .contenedor-ServiciosServicio{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        outline-style: dotted;
+        outline-color: white;
+        border: 0;
+        margin: 3rem 0.5rem;
+    }
+
+    
+    .contenedor-ServiciosServicioImagen{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        width: 90%;
+        height: auto;
+    }
+
+    .contenedor-ServiciosServiciotexto{
+        display: flex;
+        flex-direction: column;
+
+        width:90%;
+        padding: 1rem;
+    }
+
+    .contenedor-MisionValores{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "mision" "valores";
+
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+
+        background: white;
+    }
+
+    
+    .tamImagen{
+        width: 100%; 
+        height: 50vh;
+        background-size: contain;
+    }
+    
+    
+    .contenedor-Contacto{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+        height: auto;
+        padding: 5rem;
+    
+        background-color: var(--azul-oscuro);
+    }
+
+
+
+    
+    .texto-Titulo{
+        font-size: 200%;
+        font-weight: 500;
+    }
+
+    .texto-Subtitulo{
+        font-size: 150%;
+        font-weight: 500;
+    }
+
+    .texto-regular{    
+        font-size: 130%;
+        font-weight: 400;
+    }
+
+    .texto-descripcion{    
+        font-size: 100%;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+}
